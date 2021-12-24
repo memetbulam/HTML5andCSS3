@@ -1,0 +1,22 @@
+/*display: inline-grid= tek sütun kullan, 
+grid-column-gap: 50px= Sütunlar arası boşluk bırakır
+grid-gap: 50px 150px= Satır ve sütun arası boşluk bırakır
+grid-template-columns: auto auto auto auto= Sütun sayısını 4 yaptık*/
+.grid-container{
+    display: grid;
+    grid-template-columns: 100px 100px 100px;
+    /* grid-template-rows: auto 150px auto; */
+    background-color: #2196F3;
+    padding: 10px;
+    grid-gap: 10px;
+    align-content: space-between;
+    height: 400px;
+}
+
+.grid-container > div{
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    padding: 20px 0;
+    font-size: 32px;
+    border: 1px solid rgba(0, 0, 0, 0.8);
+}

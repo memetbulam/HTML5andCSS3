@@ -1,0 +1,57 @@
+.item1{grid-area: x;}
+.item2{grid-area: menu;}
+.item3{grid-area: main;}
+.item4{grid-area: right;}
+.item5{grid-area: footer;}
+
+
+/*grid-gap: gridler arası boşluk*/
+.grid-container{
+    display: grid;
+    grid-template-areas: 
+    'x x x x x x' 
+    'menu main main main right right'
+    'menu footer footer footer footer footer';
+    grid-gap: 10px;
+    background-color: #2196F3;
+    padding: 10px;
+}
+
+.grid-container > div{
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    padding: 20px 0;
+    font-size: 32px;
+} */
+
+
+/*display: inline-grid= tek sütun kullan, 
+grid-column-gap: 50px= Sütunlar arası boşluk bırakır
+grid-gap: 50px 150px= Satır ve sütun arası boşluk bırakır*/
+/* .grid-container{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    background-color: #2196F3;
+    padding: 10px;
+    grid-gap: 10px;
+} */
+
+/* .grid-container > div{
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    padding: 20px 0;
+    font-size: 32px;
+    border: 1px solid rgba(0, 0, 0, 0.8);
+} */
+
+/*grid-column-start: 1; grid-column-end: 3= İki sütunu birleştirdik*/
+/* .item2{
+    grid-column-start: 2;
+    grid-column-end: 4;
+}
+.item5{
+    grid-column-start: 3;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 4;
+} */

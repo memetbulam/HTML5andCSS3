@@ -1,0 +1,52 @@
+/*p:empty{
+    width: 600px;
+    height: 60px;
+    background-color: darkgoldenrod;
+}
+
+p:last-of-type{ /* Sayfada gördüğün son paragrafa uygula
+    background-color: darkred;
+    color: white;
+    padding: 15px;
+}*/
+/* p:not(.prg){
+    background-color: darkred;
+    color: white;
+    padding: 15px;
+}  */
+/* Paragraf olmayanlara uygula */
+/* :not(p){ 
+    background-color: darkkhaki;
+    color: black;
+    padding: 15px;
+} */
+/* p:nth-child(3){
+    background-color: darkred;
+    color: white;
+    padding: 15px;
+} */
+/* p:nth-of-type(3){
+    background-color: darkred;
+    color: white;
+    padding: 15px;
+} */
+/* Sadece number türünde etki eder */
+input:in-range{ 
+    border: 2px solid green;
+    padding: 5px;
+}
+input:out-of-range{ 
+    border: 2px solid red;
+    padding: 5px;
+}
+/* Sayfada gördüğün ilk paragrafa uygula */
+/* p:first-of-type{  
+    background-color: darkred;
+    color: white;
+    padding: 15px;
+} */
+/* p:first-child{
+    background-color: blue;
+    color: white;
+    padding: 15px;
+} */

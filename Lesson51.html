@@ -1,0 +1,59 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>Lesson 51 Progress Etiketi</title>
+        <link rel="stylesheet" type="text/css" href="css/stylelesson51.css">
+    </head>
+    <body>
+       <header class="header">
+           <h1>Html 5 ve Css 3 Eğitim Seti</h1>
+        </header>
+       <nav class="menu">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">News</a></li>
+            <li><a href="#">Gallery</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+    <aside class="sidebar">
+        <header>
+            <h2>Eğitim Setlerim</h2>
+        </header>
+        <ul>
+            <li><a href="#">HTML</a></li>
+            <li><a href="#">CSS</a></li>
+            <li><a href="#">HTML 5</a></li>
+            <li><a href="#">CSS 5</a></li>
+            <li><a href="#">Javascript</a></li>
+        </ul>
+    </aside>
+    <section class="change">
+        <header>
+            <h3>Görsel başlığı</h3>
+        </header>
+        <label>Loading...</label>
+        <progress max="100" value="0" id="load" style="width: 300;"></progress>
+        <h3 id="result"></h3>
+    </section>
+    <footer class="page-bottom"">&copy;Tüm hakları saklıdır.</footer>
+    <script>
+        var valueLoad=0;
+        progressBar(valueLoad);
+        function progressBar(valueLoad){
+            var bar=document.getElementById("load");
+            bar.value=valueLoad;
+            valueLoad++;
+            var loadTime=setTimeout("progressBar("+valueLoad+")",70);
+            if(valueLoad > 100){
+                clearTimeout(loadTime);
+                document.getElementById("result").innerHTML="Yükleme Tamamlandı";
+            }
+        }
+    </script>
+    </body>
+</html>

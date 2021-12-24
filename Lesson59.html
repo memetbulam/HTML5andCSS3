@@ -1,0 +1,67 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>Lesson 59 Formenctype, Formmethod, Formnovalidate, Formtarget</title>
+        <link rel="stylesheet" type="text/css" href="css/stylelesson59.css">
+    </head>
+    <body>
+       <header class="header">
+           <h1>Html 5 ve Css 3 Eğitim Seti</h1>
+        </header>
+       <nav class="menu">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">News</a></li>
+            <li><a href="#">Gallery</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+    <aside class="sidebar">
+        <details>
+            <summary>Eğitim Setlerim</summary>
+        <ul>
+            <li><a href="#">HTML</a></li>
+            <li><a href="#">CSS</a></li>
+            <li><a href="#">HTML 5</a></li>
+            <li><a href="#">CSS 5</a></li>
+            <li><a href="#">Javascript</a></li>
+        </ul>
+    </details>
+    <details>
+        <summary>Pictures</summary>
+        <img src="img/image1.png" width="280" height="150" />
+        <img src="img/image2.png" width="280" height="150" />
+    </details>
+    <details open>
+        <summary>Login</summary>
+        <form>
+            <br>
+            <label>Username:</label>
+            <p><input type="text" name="username" id="username" /></p>
+            <label>Password:</label>
+            <p><input type="password" name="password" id="password" /></p>
+            <p><input type="submit" name="login" id="Login" /></p>
+        </form>
+    </details>
+    </aside>
+    <section class="change">
+        <header>
+            <h3>Görsel başlığı</h3>
+        </header>
+        <form action="php/l59send.php" id="myForm" method="GET" novalidate>
+            <p>Kullanıcı Adı: <input type="text" id="userName" name="userName" autofocus></p>
+            <p>Adınız: <input type="text" id="uName" name="uName" autocomplete="on"></p>
+            <p>E-Posta: <input type="email" id="userEmail" name="userEmail"></p>
+        
+            <p><input type="submit" value="Send">
+               <input type="submit" value="Action" formmethod="POST" formaction="php/l59send2.php" formtarget="_blank"></p> <!--Post olarak gönderir-->
+        </form>
+        
+    </section>
+    <footer class="page-bottom"">&copy;Tüm hakları saklıdır.</footer>
+    </body>
+</html>

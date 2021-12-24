@@ -1,0 +1,31 @@
+
+.page-top{
+    background-color: darkgreen;
+    text-align: center;
+    height: 150px;
+}
+.page-left{
+    background-color: cyan;
+    text-align: center;
+    float: left;
+    width: 75%;
+    height: 350px;
+}
+.page-right{
+    background-color: darkmagenta;
+    text-align: center;
+    float: left;
+    width: 25%;
+    height: 350px;
+}
+body{
+    margin: 0;
+}
+.page-left .content{
+    padding: 5px;
+}
+.page-left header{
+    padding: 20px;
+    text-align: left;
+    font-size: 25px;
+}

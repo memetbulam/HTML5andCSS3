@@ -1,0 +1,86 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>Lesson 64 Canvas üçgen çizimi ve SVG vektörel grafikler</title>
+        <link rel="stylesheet" type="text/css" href="css/stylelesson64.css">
+    </head>
+    <body>
+       <header class="header">
+           <h1>Html 5 ve Css 3 Eğitim Seti</h1>
+        </header>
+       <nav class="menu">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">News</a></li>
+            <li><a href="#">Gallery</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+    <aside class="sidebar">
+        <details>
+            <summary>Eğitim Setlerim</summary>
+        <ul>
+            <li><a href="#">HTML</a></li>
+            <li><a href="#">CSS</a></li>
+            <li><a href="#">HTML 5</a></li>
+            <li><a href="#">CSS 5</a></li>
+            <li><a href="#">Javascript</a></li>
+        </ul>
+    </details>
+    <details>
+        <summary>Pictures</summary>
+        <img src="img/image1.png" width="280" height="150" />
+        <img src="img/image2.png" width="280" height="150" />
+    </details>
+    <details open>
+        <summary>Login</summary>
+        <form>
+            <br>
+            <label>Username:</label>
+            <p><input type="text" name="username" id="username" /></p>
+            <label>Password:</label>
+            <p><input type="password" name="password" id="password" /></p>
+            <p><input type="submit" name="login" id="Login" /></p>
+        </form>
+    </details>
+    </aside>
+    <section class="change">
+        <header>
+            <h3>Görsel başlığı</h3>
+        </header>
+        <svg width="600" height="300" style="border: 1px solid black;">
+            <!-- <circle cx="100" cy="100" r="80" stroke="#F00" strokewidth="7" fill="darkolivegreen" /> -->
+            <!-- <rect width="300" height="150" style="fill:rgb(120,255,255); stroke-width:5; stroke:#000; opacity:1" x="80" y="80"
+            rx="10" ry="10" /> -->
+            <!-- <polygon  points="100,10 40, 198 190, 78 10, 78 160, 198" style="fill:brown;stroke:#000;stroke-width:4;fill-rule:evenodd;" /> -->
+            <defs>
+                <lineargradient id="grd" x1="0%" y1="0%" x2="100%" y2="0%">
+                    <stop offset="0%" style="stop-color: red; stop-opacity:0.5" />
+                    <stop offset="100%" style="stop-color: black; stop-opacity:1" />
+                </lineargradient>
+            </defs>
+            <ellipse cx="180" cy="100" rx="150" ry="85" fill="url(#grd)" />
+            <text fill="#FFF" font-size="40" x="100" y="110">
+                HTML 5
+            </text>
+        </svg>
+        <a href="Lesson65.html">Sayfa 65</a>
+        <!-- <canvas id="newCanvas" width="600" height="300" style="border: 2px solid black;"></canvas>
+        <script>
+            var myCanvas=document.querySelector("#newCanvas").getContext("2d");
+            myCanvas.fillStyle="darkolivegreen"; /* Canvas'a renk verdik */
+            myCanvas.beginPath();
+            myCanvas.moveTo(60,200); /* x,y belirledik */
+            myCanvas.lineTo(200,200);
+            myCanvas.lineTo(130,50);
+            myCanvas.closePath();
+            myCanvas.fill();
+        </script> -->
+    </section>
+    <footer class="page-bottom"">&copy;Tüm hakları saklıdır.</footer>
+    </body>
+</html>

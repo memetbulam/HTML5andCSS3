@@ -1,0 +1,44 @@
+/* .container{
+    overflow: auto;
+}
+.main{
+    margin-left: 5px;
+}
+.sidebar{
+    float: none;
+    width: auto;
+}
+.menu{
+    margin: 0;
+    padding: 0;
+}
+.item{
+    background: darkred;
+    border: 1px solid black;
+    border-radius: 3px;
+    list-style-type: none;
+    margin: 5px;
+    padding: 4px;
+    color: white;
+}
+@media screen and (min-width:480px){
+    .sidebar{
+        float: left;
+        width: 250px;
+    }
+} */
+ul{
+    list-style-type: none;
+}
+ul > li > a{
+    color: green;
+    text-decoration: none;
+    padding: 5px;
+    display: block;
+}
+@media screen and (max-width:900px) and (min-width:520px){
+    ul > li > a{
+        padding-left: 30px;
+        background: url(/img/emailicon.png) left center no-repeat;
+    }
+}

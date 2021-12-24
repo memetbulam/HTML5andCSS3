@@ -1,0 +1,143 @@
+body{
+    margin: 0;
+}
+
+.header{
+    background-color: rgb(210, 210, 210);
+    padding: 10px;
+    text-align: center;
+    height: 100px;
+}
+
+.menu ul{
+    background-color: rgb(180, 180, 180);
+    padding: 10px;
+    margin:0;
+}
+
+.menu ul li{
+    list-style-type: none;
+    display: inline;
+    padding-right: 10px;
+}
+.menu a{
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px;
+}
+.menu ul li a:hover{
+    background-color: rgb(0, 0, 0);
+    color: red;
+}
+.sidebar{
+    background-color: rgb(150, 150, 150);
+    padding: 0 10px;
+    margin-right: 3px;
+    width: 15%;
+    min-height: 710px;
+    float: left;
+}
+.sidebar li{
+    list-style-type: none;
+    padding: 10px;
+}
+.sidebar a{
+    text-decoration: none;
+    color: black;
+}
+.sidebar a:hover{
+    color: red;
+}
+.change{
+    width: 82%;
+    padding: 0 15px;
+    background-color: rgb(228, 228, 228);
+    min-height: 710px;
+    float: left;
+}
+.change header{
+    color: rgb(129, 0, 0);
+    font-size: 20px;
+    border-bottom: 1px solid black;
+    margin-bottom: 10px;
+}
+.change .content{
+    font-size: 16px;
+}
+.change footer{
+    border-top: 1px solid black;
+    padding: 10px;
+    float: right;
+}
+.page-bottom{
+    background-color: rgb(50, 50, 50);
+    padding: 10px;
+    height: 56px;
+    clear: left;
+}
+summary{
+    border-bottom: 1px solid black;
+    margin:10px 0 0 0;
+}
+
+.flex-container{
+    /* width: 80%;
+    height: 400px; */
+    background-color: darkred;
+    display: flex;
+    border: 2px solid black;
+    flex-wrap: wrap; /* Kutular yan yana sığmadığında bir alt satıra geç *nowrap= kutuları sabitler* */
+    /*align-content: flex-end; /* Dikeyde içeriğe göre sıralama -Yatayda justify-content- */
+    /*align-content: space-between; /* 2 kutu arasındaki boşluk *space-around= 2 kutu arası, üst ve altta boşluk bırakır* */
+    /*align-items: center; */
+    /*flex-flow: row wrap; /* flex-direction=row; flex-wrap=wrap; */
+}
+.item{
+    background-color: rgba(255, 255, 255, 0.8);
+    width: 150px;
+    /* height: 100px; */
+    margin: 5px;
+    line-height: 75px; /* Yüksekliğe göre konumlandır */
+    font-size: 28px;
+    text-align:center;
+}
+/* .item:last-child{
+    margin: auto;
+} */
+/* .item1{
+    align-self: flex-start;
+}
+.item2{
+    align-self: center;
+}
+.item3{
+    align-self: flex-end;
+}
+.item4{
+    align-self: stretch;
+}
+.item5{
+    align-self: baseline;
+} */
+
+
+/*.item1{
+    flex-grow: 1;
+}
+.item2{
+    flex-grow: 8; /* flex-grow: Sayfayı böler, Sayfayı 10'a böldük
+}
+.item3{
+    flex-grow: 1;
+} */
+
+/*.item1{
+    flex:1 0 200px  /* Flex-grow,shrink,basis
+}
+.item2{
+    flex:8 0 500px
+}
+.item3{
+    flex:1 0 300px
+}*/

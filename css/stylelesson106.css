@@ -1,0 +1,12 @@
+:root{
+    --main-bg-color:darkred;
+    --main-txt-color:white;
+    --main-p:15px;
+    --main-margin:10px;
+}
+.special-div{
+    background-color: var(--main-bg-color);
+    padding: var(--main-p);
+    margin-bottom: var(--main-margin);
+    color: var(--main-txt-color);
+}

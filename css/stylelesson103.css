@@ -1,0 +1,47 @@
+/* input:read-only{ /* Okunabilir olana css uygula
+    background-color: darkred;
+    color: white;
+    padding: 5px;
+    border: none;
+}
+input:-moz-read-only{
+    background-color: darkred;
+    color: white;
+    padding: 5px;
+    border: none;
+}
+input:read-write{ /* okunabilir-yazılabilir
+    background-color: darkolivegreen;
+    color: white;
+    padding: 5px;
+    border: none;
+}
+input:-moz-read-wrrite{
+    background-color: darkolivegreen;
+    color: white;
+    padding: 5px;
+    border: none;
+} */
+input:required{ /* Boş geçildiğinde uygulanacak css */
+    background-color: grey;
+    color: white;
+    padding: 5px;
+    border: none;
+}
+/*:root{ bütün sayfaya uygula
+    background-color: rgb(226, 130, 255);
+}*/
+input:valid{ /* css uygulamak için email formatının doğru girilmesi gerekir */
+    padding: 5px;
+    color: red;
+    border: 2px solid green;
+    margin: 5px;
+    font-size: 22px;
+}
+:target{ /* belirtilen id'lere css uygulayacak */
+    border: 3px solid darkred;
+    font-size: 18px;
+    background-color: rgb(70, 70, 70);
+    color: white;
+    padding: 10px;
+}

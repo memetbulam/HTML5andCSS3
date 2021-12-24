@@ -1,0 +1,41 @@
+/*p:nth-of-type(1){  Sayfada paragraf içerisinde 1. satırı bul
+    background-color: darkolivegreen;
+    padding: 5px;
+    color: black;
+    font-weight: bold;
+}*/
+/*p:nth-last-child(2){ /* sondan 2. satırı seç 
+    background-color: darkolivegreen;
+    padding: 5px;
+    color: black;
+    font-weight: bold;
+}*/
+/*p:nth-last-of-type(3){ /* paragraf içerisinde sondan 3. uygula 
+    background-color: darkolivegreen;
+    padding: 5px;
+    color: black;
+    font-weight: bold;
+}*/
+/*p:only-of-type{ /* Bir etiketin altındaki tek etikete uygular
+    background-color: darkolivegreen;
+    padding: 5px;
+    color: black;
+    font-weight: bold;
+} */
+/*p:only-child{ /* 
+    background-color: darkolivegreen;
+    padding: 5px;
+    color: black;
+    font-weight: bold;
+} */
+/*input:optional{ /* required dışındaki tüm imputlara uygular 
+    background-color: darkolivegreen;
+}*/
+input:in-range{ /* Sadece number türünde etki eder, belirtilen değerler arasında uygula */
+    border: 2px solid green;
+    padding: 5px;
+}
+input:out-of-range{ /* Belirtilen değerin dışına çıkınca uygula */
+    border: 2px solid red;
+    padding: 5px;
+}

@@ -1,0 +1,122 @@
+body{
+    margin: 0;
+}
+
+.header{
+    background-color: rgb(210, 210, 210);
+    padding: 10px;
+    text-align: center;
+    height: 100px;
+}
+
+.menu ul{
+    background-color: rgb(180, 180, 180);
+    padding: 10px;
+    margin:0;
+}
+
+.menu ul li{
+    list-style-type: none;
+    display: inline;
+    padding-right: 10px;
+}
+.menu a{
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px;
+}
+.menu ul li a:hover{
+    background-color: rgb(0, 0, 0);
+    color: red;
+}
+.sidebar{
+    background-color: rgb(150, 150, 150);
+    padding: 0 10px;
+    margin-right: 3px;
+    width: 15%;
+    min-height: 710px;
+    float: left;
+}
+.sidebar li{
+    list-style-type: none;
+    padding: 10px;
+}
+.sidebar a{
+    text-decoration: none;
+    color: black;
+}
+.sidebar a:hover{
+    color: red;
+}
+.change{
+    width: 82%;
+    padding: 0 15px;
+    background-color: rgb(228, 228, 228);
+    min-height: 710px;
+    float: left;
+}
+.change header{
+    color: rgb(129, 0, 0);
+    font-size: 20px;
+    border-bottom: 1px solid black;
+    margin-bottom: 10px;
+}
+.change .content{
+    font-size: 16px;
+}
+.change footer{
+    border-top: 1px solid black;
+    padding: 10px;
+    float: right;
+}
+.page-bottom{
+    background-color: rgb(50, 50, 50);
+    padding: 10px;
+    height: 56px;
+    clear: left;
+}
+summary{
+    border-bottom: 1px solid black;
+    margin:10px 0 0 0;
+}
+.rules{
+    margin:20px;
+    width: 80px;
+    height: 80px;
+    background-color: darkred;
+    position: relative; /* eski konumundan itibaren farklı konumda konumlandırılabilir*/
+    color: white;
+    padding: 15px;
+    animation: Move 5s linear  0.5s infinite alternate; /* Animation-name, animation-duration, hız, animation-timing-function, delay, 
+    animation-iteration-count, animation-direction */
+}
+.time1{
+     animation-timing-function: linear; /* sabit hız*/
+}
+.time2{
+    animation-timing-function: ease; /* Kayma animasyonu */
+}
+.time3{
+    animation-timing-function: ease-in; /* Yavaş başlıyor*/
+}
+.time4{
+    animation-timing-function: ease-out; /* Yavaş bitiyor */
+}
+.time5{
+    animation-timing-function: ease-in-out; /* Yavaş başlayıp yavaş bitiyor */
+}
+
+
+@keyframes Move { /* Sarı'dan siyaha git */
+    0% {background-color: darkgoldenrod;left:0;top:0;}
+    50% {background-color: darkgreen;left:200px;top:0px;}
+    100% {background-color: black;left:0;top:0;}
+}
+/* @keyframes Move { /* Sarı'dan siyaha git 
+    0% {background-color: darkgoldenrod;left:0;top:0;}
+    25% {background-color: deeppink;left:200px;top:0;}
+    50% {background-color: darkgreen;left:200px;top:200px;}
+    75% {background-color: darkblue;left:0;top:200px;}
+    100% {background-color: black;left:0;top:0;}
+} */

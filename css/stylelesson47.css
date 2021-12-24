@@ -1,0 +1,54 @@
+
+.page-top{
+    background-color: darkgreen;
+    text-align: center;
+    height: 20%;
+    width: 100%;
+}
+.page-left{
+    background-color: cyan;
+    text-align: center;
+    float: left;
+    width: 75%;
+    height: 60%;
+}
+.page-right{
+    background-color: darksalmon;
+    text-align: center;
+    float: right;
+    width: 25%;
+    height: 60%;
+}
+body{
+    margin: 0;
+}
+.page-left .content{
+    padding: 5px;
+}
+.page-left header{
+    padding: 20px;
+    text-align: left;
+    font-size: 25px;
+}
+.page-bottom{
+    background-color: lawngreen;
+    text-align: center;
+    clear: left;
+    height: 20%;
+    width: 100%;
+}
+.page-right a{
+    text-decoration: none;
+    color: black;
+}
+.page-right a:hover{
+    color: deeppink;
+}
+.page-right li{
+    list-style-type: none;
+    padding: 15px;
+    text-align: left;
+}
+aside h2{
+    text-align: center;
+}

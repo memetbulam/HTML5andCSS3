@@ -1,0 +1,106 @@
+body{
+    margin: 0;
+}
+
+.header{
+    background-color: rgb(210, 210, 210);
+    padding: 10px;
+    text-align: center;
+    height: 100px;
+}
+
+.menu ul{
+    background-color: rgb(180, 180, 180);
+    padding: 10px;
+    margin:0;
+}
+
+.menu ul li{
+    list-style-type: none;
+    display: inline;
+    padding-right: 10px;
+}
+.menu a{
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px;
+}
+.menu ul li a:hover{
+    background-color: rgb(0, 0, 0);
+    color: red;
+}
+.sidebar{
+    background-color: rgb(150, 150, 150);
+    padding: 0 10px;
+    margin-right: 3px;
+    width: 15%;
+    min-height: 710px;
+    float: left;
+}
+.sidebar li{
+    list-style-type: none;
+    padding: 10px;
+}
+.sidebar a{
+    text-decoration: none;
+    color: black;
+}
+.sidebar a:hover{
+    color: red;
+}
+.change{
+    width: 82%;
+    padding: 0 15px;
+    background-color: rgb(228, 228, 228);
+    min-height: 710px;
+    float: left;
+}
+.change header{
+    color: rgb(129, 0, 0);
+    font-size: 20px;
+    border-bottom: 1px solid black;
+    margin-bottom: 10px;
+}
+.change .content{
+    font-size: 16px;
+}
+.change footer{
+    border-top: 1px solid black;
+    padding: 10px;
+    float: right;
+}
+.page-bottom{
+    background-color: rgb(50, 50, 50);
+    padding: 10px;
+    height: 56px;
+    clear: left;
+}
+summary{
+    border-bottom: 1px solid black;
+    margin:10px 0 0 0;
+}
+.shadow{
+    position: relative;
+    width: 610px;
+    text-align: center;
+    background-color: white;
+    /*box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.5);  Sağ, aşşağı, blur, renk*/
+    padding: 10px;
+}
+.shadow img{
+    width: 100%;
+    border: 1px solid black;
+    border-style: inset;
+}
+.shadow::after{
+    content: "";
+    position: absolute;
+    background-color: black;
+    z-index: -1;
+    width: 70%;
+    left: 15%;
+    height: 100px;
+    bottom: 0;
+    box-shadow: 0 20px 5px rgba(0, 0, 0, 0.4);
+}

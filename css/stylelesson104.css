@@ -1,0 +1,22 @@
+img{
+    width: 50%;
+    height: 100%;
+    float: left;
+    object-fit: contain;
+}
+/* object-filt= img veya video etiketlerinin dış katmana sığması için nasıl yeniden boyutlandırılması gerektiğini belirtir*/
+/*.fill{
+    object-fit: fill; /* Default olan değer 
+}
+.contain{
+    object-fit: contain; /* En ve boy oranını koruyarak resmi küçülttü 
+}
+.scale{
+    object-fit: scale-down; /* En-boy oranını koruyarak küçültür 
+}
+.cover{
+    object-fit: cover; /* Belirlenen en-boy oranına göre tutuyor fakat açıkta kalan kısımları kırpar 
+}
+.none{
+    object-fit: none;
+}*/

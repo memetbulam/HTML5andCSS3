@@ -1,0 +1,23 @@
+/*.newspaper{
+    font-size: 24px;
+    column-count: 3; /* Default, sütunlara ayırır */
+    /*column-gap: 50px; /* Sütunlar arası boşluk miktarı 
+    /*column-rule-style: solid; /* Sütunlar arası çizgi oluşturduk 
+    column-rule-width: 3px; /* Sütunlar arası çizgi genişliği 
+    column-rule-color: red; /* Sütunlar arası çizgi rengini belirler */
+    /*column-rule: 4px dotted red; /* width, style, color */
+    /*columns: 50px 3; /* column-width, column-count 
+}*/
+/* .newspaper h2{
+    column-span: all;
+} */
+div{
+    column-count: 3;
+    height: 80px;
+}
+.newspaper1{
+    column-fill: auto;
+}
+.newspaper2{
+    column-fill: balance; /* 3 sütunuda dengeli bir şekilde kullanır*/
+}

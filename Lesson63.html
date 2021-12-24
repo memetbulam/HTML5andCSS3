@@ -1,0 +1,89 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>Lesson 63 Canvas gradyan renklendirme ve grafike resim ekleme</title>
+        <link rel="stylesheet" type="text/css" href="css/stylelesson63.css">
+    </head>
+    <body>
+       <header class="header">
+           <h1>Html 5 ve Css 3 Eğitim Seti</h1>
+        </header>
+       <nav class="menu">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">News</a></li>
+            <li><a href="#">Gallery</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+    <aside class="sidebar">
+        <details>
+            <summary>Eğitim Setlerim</summary>
+        <ul>
+            <li><a href="#">HTML</a></li>
+            <li><a href="#">CSS</a></li>
+            <li><a href="#">HTML 5</a></li>
+            <li><a href="#">CSS 5</a></li>
+            <li><a href="#">Javascript</a></li>
+        </ul>
+    </details>
+    <details>
+        <summary>Pictures</summary>
+        <img src="img/image1.png" width="280" height="150" />
+        <img src="img/image2.png" width="280" height="150" />
+    </details>
+    <details open>
+        <summary>Login</summary>
+        <form>
+            <br>
+            <label>Username:</label>
+            <p><input type="text" name="username" id="username" /></p>
+            <label>Password:</label>
+            <p><input type="password" name="password" id="password" /></p>
+            <p><input type="submit" name="login" id="Login" /></p>
+        </form>
+    </details>
+    </aside>
+    <section class="change">
+        <header>
+            <h3>Görsel başlığı</h3>
+        </header>
+        <canvas id="newCanvas" width="600" height="300" style="border: 2px solid black;"></canvas>
+        <script>
+            var myCanvas=document.querySelector("#newCanvas").getContext("2d");
+            /* myCanvas.fillStyle="#FF0000";
+            myCanvas.fillRect(65,75,90,90);
+            myCanvas.strokeStyle="#000000";
+            myCanvas.lineWidth="3";
+            myCanvas.strokeRect(65,75,90,90); 
+            myCanvas.lineWidth="3"
+            myCanvas.strokeStyle="darkred";
+            myCanvas.moveTo(0,150);   Başlangıç noktası
+            myCanvas.lineTo(200,150);  Bitiş noktası
+            myCanvas.stroke();   çiz
+            myCanvas.beginPath(); */
+            /* myCanvas.lineWidth="4"
+            myCanvas.strokeStyle="darkolivegreen";
+            myCanvas.arc(300, 130, 90, 0, 0.7*Math.PI, false);  çember oluştur 
+            myCanvas.stroke(); */
+            // myCanvas.font="58px Arial";
+            // var grd=myCanvas.createRadialGradient(10,20,4,90,60,20);
+            // var grd=myCanvas.createLinearGradient(0,0,325,0); /* Renk başlangıç-bitiş belirle */
+            // grd.addColorStop(0,"red"); /* 1. renk */
+            // grd.addColorStop(1,"black"); /* 2. renk */
+            // myCanvas.fillStyle=grd;
+            // myCanvas.fillRect(50,50,250,100); /* Dikdörtgen oluşturduk */
+            var picture=new Image();
+            picture.onload=function(){
+                myCanvas.drawImage(picture,0,0);
+            }
+            picture.src="img/image1.png";
+        </script>
+    </section>
+    <footer class="page-bottom"">&copy;Tüm hakları saklıdır.</footer>
+    </body>
+</html>
